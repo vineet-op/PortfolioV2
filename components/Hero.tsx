@@ -4,7 +4,7 @@ import React from 'react'
 import { Button } from "@/components/ui/button"
 import Navbar from './Navbar'
 import { motion } from "motion/react"
-
+import { AuroraText } from "@/components/magicui/aurora-text";
 const Hero = () => {
     return (
         <section className='w-screen h-screen bg-gradient-to-r flex flex-col from-black/95 to to-black'>
@@ -64,7 +64,12 @@ const Hero = () => {
                     }
                 }}
                 className=' text-white font-sans text-center mx-auto pt-10 font-light  text-lg'>
-                a <span className=' font-medium text-violet-500'>Frontend/Full-Stack Developer</span> Based in India.
+                a {" "}
+                <AuroraText>
+                    <span className=' font-medium'>Frontend/Full-Stack Developer</span>
+                </AuroraText>
+                {" "}
+                Based in India.
                 <div className=' text-white font-sans'>
                     I speclize in building beautiful and functional websites.
                 </div>
