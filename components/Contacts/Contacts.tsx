@@ -1,6 +1,6 @@
 "use client"
 
-import { Github, Linkedin, LinkedinIcon, Mail, Twitter } from 'lucide-react'
+import { Github, LinkedinIcon, Mail, Twitter } from 'lucide-react'
 import React from 'react'
 import { Button } from '../ui/button'
 

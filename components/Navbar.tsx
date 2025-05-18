@@ -13,9 +13,10 @@ const Navbar = () => {
             </div>
 
             <div className=' flex gap-8 font-sans text-muted'>
-                <a href="Projects" className=' text-sm'>Projects</a>
-                <a href="Skills" className=' text-sm'>Skills</a>
-                <a href="Contact" className=' text-sm'>Contact</a>
+                <a href="#Projects" className='text-sm'>Projects</a>
+                <a href="#Skills" className='text-sm'>Skills</a>
+                <a href="#Contact" className='text-sm'>Contact</a>
+
             </div>
         </nav>
 

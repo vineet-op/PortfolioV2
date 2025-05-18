@@ -8,9 +8,17 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Hero />
-      <Projects />
-      <Skills />
-      <Contacts />
+      <div id="Projects">
+        <Projects />
+      </div>
+
+      <div id="Skills">
+        <Skills />
+      </div>
+
+      <div id="Contact">
+        <Contacts />
+      </div>
     </main>
   );
 }
