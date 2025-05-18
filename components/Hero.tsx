@@ -73,9 +73,9 @@ const Hero = () => {
                 <div className=' text-white font-sans'>
                     I speclize in building beautiful and functional websites.
                 </div>
-
-                <Button className='p-6 mt-8 rounded-full bg-white text-black cursor-pointer font-sans font-semibold text-xs  hover:bg-white hover:shadow-2xl  hover:scale-110 transition duration-200'>CONNECT WITH ME</Button>
-
+                <a href="#Contact">
+                    <Button className='p-6 mt-8 rounded-full bg-white text-black cursor-pointer font-sans font-semibold text-xs  hover:bg-white hover:shadow-2xl  hover:scale-110 transition duration-200'>CONNECT WITH ME</Button>
+                </a>
             </motion.div>
         </section>
     )
