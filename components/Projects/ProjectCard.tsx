@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
@@ -47,11 +48,17 @@ const ProjectCard = ({ title, description, image, techStack, github, live }: Pro
             </CardContent>
             <CardFooter className="flex justify-end gap-3">
 
-                <Button className='border-white text-white hover:text-black hover:bg-white'>
+                <Button
+                    onClick={() => window.open(live, '_blank')}
+                    className='border-white text-white hover:text-black hover:bg-white cursor-pointer'
+                >
                     <ExternalLink />
                 </Button>
 
-                <Button className='border-white text-white hover:text-black hover:bg-white'>
+                <Button
+                    onClick={() => window.open(github, '_blank')}
+                    className='border-white text-white hover:text-black hover:bg-white cursor-pointer'
+                >
                     <Github />
                 </Button>
 

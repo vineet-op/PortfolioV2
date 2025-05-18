@@ -1,7 +1,8 @@
+"use client"
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import { projects } from './projectData'
-import { ShineBorder } from '../magicui/shine-border'
+
 
 
 const Projects = () => {
