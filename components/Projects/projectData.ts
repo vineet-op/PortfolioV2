@@ -4,16 +4,16 @@ export const projects = [
         description: "AI Powered Mock Interview Platform where people can practice mock interviews.",
         image: "/prep.png",
         techStack: ["NextJS", "Typescript", "Tailwind", "Shadcn", "Prisma", "Postgres"],
-        github: "https://github.com/your-repo/prepsuite",
-        live: "https://prepsuite.vercel.app"
+        github: "https://github.com/vineet-op/interview-suite",
+        live: "https://interview-suite.vercel.app/"
     },
     {
         title: "Matiks 💟",
         description: "Redesign Matiks website where users can solve mental math puzzles and rank on leaderboard.",
         image: "/matiks.png",
         techStack: ["NextJS", "Tailwind", "TypeScript", "Motion", "Shadcn",],
-        github: "https://matiks.vercel.app/",
-        live: "https://cryptowallet.xyz"
+        github: "https://github.com/vineet-op/Matiks",
+        live: "https://matiks.vercel.app/"
     },
     {
         title: "TrueFeedback🎙️",
