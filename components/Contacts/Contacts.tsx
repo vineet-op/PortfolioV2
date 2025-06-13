@@ -3,17 +3,34 @@
 import { Github, LinkedinIcon, Mail, Twitter } from 'lucide-react'
 import React from 'react'
 import { Button } from '../ui/button'
+import { motion } from "motion/react"
 
 const Contacts = () => {
     return (
-        <section className='w-screen h-screen font-sans  bg-gradient-to-r  from-black/95 to to-black text-white'>
+        <section
+
+            className='w-screen h-screen font-sans  bg-gradient-to-r  from-black/95 to to-black text-white'>
 
             <h1 className='p-10 text-5xl  font-sans font-bold tracking-tighter max-w-2xl'> Let's Connect! 🤝</h1>
             <div className='px-10 font-sans text-white text-lg pb-10'>
                 Wheather it's a open roles, freelance or just a Hello I'm here 💯
             </div>
 
-            <div className='px-10 flex flex-col gap-5 w-full max-w-2xl pt-10'>
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    filter: "blur(10px)"
+                }}
+                whileInView={{
+                    opacity: 1,
+                    filter: "blur(0px)"
+                }}
+                transition={{
+                    duration: 0.3,
+                    delay: 0.2,
+                    damping: 2
+                }}
+                className='px-10 flex flex-col gap-5 w-full max-w-2xl pt-10'>
 
                 <Button
                     variant="default"
@@ -51,9 +68,9 @@ const Contacts = () => {
                     <span className='ml-4 text-white'>Send me an Email</span>
                 </Button>
 
-            </div>
+            </motion.div>
 
-            <footer className='-p-3 text-center m-10 mt-36 font-sans text-base'>
+            <footer className='-p-1 text-center m-10 mt-20 font-sans text-base'>
                 Made with 💖 By <a href="https://twitter.com/Vineet2OP" target="_blank" rel="noopener noreferrer" className="hover:underline text-orange-300">Vineet</a>
             </footer>
 

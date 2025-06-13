@@ -31,7 +31,7 @@ const Hero = () => {
                 <div
                     className="font-sans text-xl text-white font-medium tracking-tighter"
                 >
-                    Hi, I'm Vineet 👋
+                    Hello, I'm Vineet 👋
                 </div>
             </motion.div>
             <motion.div
@@ -46,10 +46,10 @@ const Hero = () => {
                         duration: 0.3
                     }
                 }}
-                className='font-sans text-5xl text-white py-1 font-bold mx-auto max-w-xl text-center pt-5 tracking-tighter'>
-                Building digital <br />
-                products, brands, and
-                experience.
+                className='font-sans text-5xl text-white font-bold mx-auto max-w-xl text-center pt-5 tracking-tighter'>
+                Frontend Developer <br />
+                Who Build n Breaks stuff,
+                for web 🕸️
             </motion.div>
             <motion.div
                 initial={{
@@ -64,17 +64,12 @@ const Hero = () => {
                     }
                 }}
                 className=' text-white font-sans text-center mx-auto pt-10 font-light  text-lg'>
-                a {" "}
-                <AuroraText>
-                    <span className=' font-medium'>Frontend/Full-Stack Developer</span>
-                </AuroraText>
-                {" "}
-                Based in India.
-                <div className=' text-white font-sans'>
+
+                <div className=' text-white font-normal font-sans'>
                     I speclize in building beautiful and functional websites.
                 </div>
                 <a href="#Contact">
-                    <Button className='p-6 mt-8 rounded-full bg-white text-black cursor-pointer font-sans font-semibold text-xs  hover:bg-white hover:shadow-2xl  hover:scale-110 transition duration-200'>CONNECT WITH ME</Button>
+                    <Button className='p-6 mt-8 rounded-full bg-green-400 text-black cursor-pointer font-sans font-semibold text-xs  hover:bg-green-300 hover:shadow-2xl  hover:scale-110 transition duration-200'>CONNECT WITH ME</Button>
                 </a>
             </motion.div>
         </section>

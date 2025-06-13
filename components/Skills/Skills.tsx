@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import {
     Braces,
     FileJson,
@@ -108,8 +108,8 @@ const Skills = () => {
                         <motion.div
                             key={skill.name}
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.05 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3, delay: index * 0.05 }}
                             className="bg-black rounded-xl p-6 flex flex-col items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-800 aspect-square"
                         >
                             <div className="mb-3">{skill.icon}</div>
@@ -117,9 +117,22 @@ const Skills = () => {
                         </motion.div>
                     ))}
                 </div>
-                <div className="p-10 w-full flex justify-center font-sans">
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        y: 100
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        y: 0
+                    }}
+                    transition={{
+                        duration: 0.3,
+                        delay: 0.5
+                    }}
+                    className="p-10  w-full flex justify-center font-sans">
                     <GitHubCalendar username="vineet-op" />
-                </div>
+                </motion.div>
             </div>
         </section>
     )

@@ -25,7 +25,7 @@ type ProjectProps = {
 const ProjectCard = ({ title, description, image, techStack, github, live }: ProjectProps) => {
     return (
 
-        <Card className="bg-black text-white w-96 h-[32.8rem] rounded-4xl  border-4 border-purple-400">
+        <Card className="bg-black text-white w-96 h-[32.8rem] rounded-4xl border-none shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
             <Image
                 alt='project_image'
                 src={image}
