@@ -1,20 +1,27 @@
 "use client"
 
-import { Github, LinkedinIcon, Mail, Twitter } from 'lucide-react'
+import { Github, Linkedin, Mail, MessageCircle, Send, Twitter } from 'lucide-react'
 import React from 'react'
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 import { Button } from '../ui/button'
 import { motion } from "motion/react"
 
 const Contacts = () => {
+
+
+
+
     return (
         <section
+            className='w-screen h-full font-sans  bg-gradient-to-r  from-black/95 to to-black text-white'>
 
-            className='w-screen h-screen font-sans  bg-gradient-to-r  from-black/95 to to-black text-white'>
-
-            <h1 className='p-10 text-5xl  font-sans font-bold tracking-tighter max-w-2xl'> Let's Connect! 🤝</h1>
-            <div className='px-10 font-sans text-white text-lg pb-10'>
+            <h1 className='p-10 text-4xl  font-sans font-bold tracking-tighter max-w-2xl'> Let's Connect! 🤝</h1>
+            <div className='px-10 font-sans text-white text-lg'>
                 Wheather it's a open roles, freelance or just a Hello I'm here 💯
             </div>
+
+
 
             <motion.div
                 initial={{
@@ -33,44 +40,52 @@ const Contacts = () => {
                 className='px-10 flex flex-col gap-5 w-full max-w-2xl pt-10'>
 
                 <Button
-                    variant="default"
-                    className='bg-blue-400 p-8 rounded-full flex items-center justify-center w-full cursor-pointer'
-                    onClick={() => window.open('https://twitter.com/Vineet2OP', '_blank')}
+                    variant="outline"
+                    className="w-full bg-[#1DA1F2] hover:bg-[#1a91da] text-white border-none h-14 text-lg justify-start gap-3"
+                    onClick={() => window.open("https://twitter.com/yourusername", "_blank")}
                 >
-                    <Twitter className='text-white w-10 h-10' />
-                    <span className='ml-4 text-white'>Chat with me on Twitter</span>
+                    <MessageCircle className="h-5 w-5" />
+                    Dm me on Twitter
                 </Button>
 
                 <Button
-                    variant="default"
-                    className='bg-blue-900 p-8 rounded-full flex items-center justify-center w-full cursor-pointer'
-                    onClick={() => window.open('https://www.linkedin.com/in/vineet-op', '_blank')}
+                    variant="outline"
+                    className="w-full bg-[#0A66C2] hover:bg-[#0958a8] text-white border-none h-14 text-lg justify-start gap-3"
+                    onClick={() => window.open("https://linkedin.com/in/yourusername", "_blank")}
                 >
-                    <LinkedinIcon className='text-white w-10 h-10' />
-                    <span className='ml-4 text-white'>Connect on LinkedIn</span>
+                    <Linkedin className="h-5 w-5" />
+                    Connect on LinkedIn
                 </Button>
 
                 <Button
-                    variant="default"
-                    className='bg-white text-black p-8 rounded-full flex items-center justify-center w-full cursor-pointer'
-                    onClick={() => window.open('https://github.com/vineet-op', '_blank')}
+                    variant="outline"
+                    className="w-full bg-white hover:bg-gray-100 text-black border-none h-14 text-lg justify-start gap-3"
+                    onClick={() => window.open("https://github.com/yourusername", "_blank")}
                 >
-                    <Github className='text-black w-10 h-10' />
-                    <span className='ml-4 text-black'>Check out my GitHub</span>
+                    <Github className="h-5 w-5" />
+                    Check out my GitHub
                 </Button>
 
                 <Button
-                    variant="default"
-                    className='bg-red-500 p-8 rounded-full flex items-center justify-center w-full cursor-pointer'
-                    onClick={() => window.open('mailto:vineetworks29@gmail.com')}
+                    variant="outline"
+                    className="w-full bg-[#f13a3a] hover:bg-[#d83333] text-white border-none h-14 text-lg justify-start gap-3"
+                    onClick={() => window.open("mailto:your@email.com", "_blank")}
                 >
-                    <Mail className='text-white w-10 h-10' />
-                    <span className='ml-4 text-white'>Send me an Email</span>
+                    <Mail className="h-5 w-5" />
+                    Send me an Email
                 </Button>
 
             </motion.div>
 
-            <footer className='-p-1 text-center m-10 mt-20 font-sans text-base'>
+
+
+            {/* contact form */}
+
+
+
+
+
+            <footer className='text-center p-10 font-sans text-base'>
                 Made with 💖 By <a href="https://twitter.com/Vineet2OP" target="_blank" rel="noopener noreferrer" className="hover:underline text-orange-300">Vineet</a>
             </footer>
 

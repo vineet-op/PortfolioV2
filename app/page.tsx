@@ -7,7 +7,10 @@ import Contacts from "@/components/Contacts/Contacts";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <Hero />
+      <div id="Home">
+        <Hero />
+      </div>
+
       <div id="Projects">
         <Projects />
       </div>

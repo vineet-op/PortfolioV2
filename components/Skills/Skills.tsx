@@ -100,7 +100,7 @@ const Skills = () => {
         <section className=" w-screen h-full bg-gradient-to-r py-2 from-black/95 to to-black text-white">
             <div className=" w-full h-full">
                 <div className="p-10">
-                    <h1 className="text-5xl font-sans tracking-tighter font-bold mb-2">My Tech Toolkit 🎨</h1>
+                    <h1 className="text-4xl font-sans tracking-tighter font-bold mb-2">My Tech Toolkit 🎨</h1>
                 </div>
 
                 <div className="grid grid-cols-4 px-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 xl:grid-cols-8 gap-4 w-screen">
