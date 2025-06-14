@@ -42,7 +42,7 @@ const Contacts = () => {
                 <Button
                     variant="outline"
                     className="w-full bg-[#1DA1F2] hover:bg-[#1a91da] text-white border-none h-14 text-lg justify-start gap-3"
-                    onClick={() => window.open("https://twitter.com/yourusername", "_blank")}
+                    onClick={() => window.open("https://x.com/Vineet2OP", "_blank")}
                 >
                     <MessageCircle className="h-5 w-5" />
                     Dm me on Twitter
@@ -51,7 +51,7 @@ const Contacts = () => {
                 <Button
                     variant="outline"
                     className="w-full bg-[#0A66C2] hover:bg-[#0958a8] text-white border-none h-14 text-lg justify-start gap-3"
-                    onClick={() => window.open("https://linkedin.com/in/yourusername", "_blank")}
+                    onClick={() => window.open("https://www.linkedin.com/in/vineet-op", "_blank")}
                 >
                     <Linkedin className="h-5 w-5" />
                     Connect on LinkedIn
@@ -60,7 +60,7 @@ const Contacts = () => {
                 <Button
                     variant="outline"
                     className="w-full bg-white hover:bg-gray-100 text-black border-none h-14 text-lg justify-start gap-3"
-                    onClick={() => window.open("https://github.com/yourusername", "_blank")}
+                    onClick={() => window.open("https://github.com/vineet-op", "_blank")}
                 >
                     <Github className="h-5 w-5" />
                     Check out my GitHub
@@ -69,20 +69,13 @@ const Contacts = () => {
                 <Button
                     variant="outline"
                     className="w-full bg-[#f13a3a] hover:bg-[#d83333] text-white border-none h-14 text-lg justify-start gap-3"
-                    onClick={() => window.open("mailto:your@email.com", "_blank")}
+                    onClick={() => window.open("mailto:vineet290403@gmail.com", "_blank")}
                 >
                     <Mail className="h-5 w-5" />
                     Send me an Email
                 </Button>
 
             </motion.div>
-
-
-
-            {/* contact form */}
-
-
-
 
 
             <footer className='text-center p-10 font-sans text-base'>
