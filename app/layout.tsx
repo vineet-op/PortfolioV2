@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
 import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/SmoothScroll";
 
 
 const geistSans = Geist({
@@ -32,7 +33,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
         <Analytics />
       </body>
     </html >

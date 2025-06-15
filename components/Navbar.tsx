@@ -115,21 +115,23 @@ const Navbar = () => {
                                 closed: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
                             }}
                         >
-                            {["Home", "Projects", "Skills", "Contact"].map((item) => (
-                                <motion.a
-                                    key={item}
-                                    href={`#${item}`}
-                                    className="text-sm hover:text-white transition-colors w-full text-center py-2"
-                                    onClick={toggleMenu}
-                                    variants={{
-                                        open: { opacity: 1, y: 0 },
-                                        closed: { opacity: 0, y: -20 },
-                                    }}
-                                    transition={{ duration: 0.2 }}
-                                >
-                                    {item}
-                                </motion.a>
-                            ))}
+                            <a href="#Home" className="text-sm hover:text-white transition-all duration-300 relative group">
+                                Home
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400/70 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                            <a href="#Projects" className="text-sm hover:text-white transition-all duration-300 relative group">
+                                Projects
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400/70 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                            <a href="#Skills" className="text-sm hover:text-white transition-all duration-300 relative group">
+                                Skills
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400/70 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                            <a href="#Contact" className="text-sm hover:text-white transition-all duration-300 relative group">
+                                Contact
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400/70 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+
                             <motion.div
                                 className="w-full flex justify-center pt-2"
                                 variants={{

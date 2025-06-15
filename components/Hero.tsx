@@ -12,7 +12,7 @@ const Hero = () => {
             <motion.div
                 initial={{
                     opacity: 0,
-                    filter: 'blur(8px)'
+                    filter: 'blur(8px)',
                 }}
                 animate={{
                     opacity: 1,
@@ -44,7 +44,8 @@ const Hero = () => {
                     opacity: 1,
                     filter: 'blur(0px)',
                     transition: {
-                        duration: 0.3
+                        duration: 0.4,
+                        delay: 0.2
                     }
                 }}
                 className='font-sans text-4xl text-white  flex flex-wrap font-bold mx-auto max-w-xl text-center pt-5 tracking-tighter px-1'>
@@ -62,7 +63,8 @@ const Hero = () => {
                     opacity: 1,
                     filter: 'blur(0px)',
                     transition: {
-                        duration: 0.3
+                        duration: 0.4,
+                        delay: 0.3
                     }
                 }}
                 className=' text-white font-sans text-center mx-auto pt-10 font-light  text-lg'>
